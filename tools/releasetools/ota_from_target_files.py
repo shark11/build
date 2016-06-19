@@ -656,6 +656,27 @@ else if get_stage("%(bcb_dev)s") == "3/3" then
   script.Unmount("/data")
   script.AppendExtra("endif;")
 
+script.Print("+============================================+");
+script.Print("      ___            ___           ___        ");
+script.Print("     /   /\         /  /\         /   /\      ");
+script.Print("    /   /::\       /  /::\       /   /::\     ");
+script.Print("   /   /::/       /  /:/\:\     /   /::/      ");
+script.Print("  /   /:/:\      /  /:/~/:/    /   /:/:\      ");
+script.Print(" /__/::/\::\    /__/:/ /:/___ /__/::/\::\     ");
+script.Print(" \__\:/\ \::\   \  \:\/:::::/ \__\:/\ \::\    ");
+script.Print("        \ \::\   \  \::/~~~~         \ \::\   ");
+script.Print("         \ \::\   \  \:\              \ \::\  ");
+script.Print("          \ \::\   \  \:\              \ \::\ ");
+script.Print("           \_\:/    \__\/               \_\:/ ");
+script.Print("                                              ");
+script.Print("            >   TEAM ROGER THAT   <           ");
+script.Print("                                              ");
+script.Print("                   PRESENTS                   ");
+script.Print("                                              ");
+script.Print("           Mediatek Open Kang Project         ");
+script.Print("+============================================+");
+script.Print("");
+
   if "selinux_fc" in OPTIONS.info_dict:
     WritePolicyConfig(OPTIONS.info_dict["selinux_fc"], output_zip)
 
@@ -732,6 +753,22 @@ else if get_stage("%(bcb_dev)s") == "3/3" then
 
   script.ShowProgress(0.05, 5)
   script.WriteRawImage("/boot", "boot.img")
+
+script.Print("");
+script.Print("      ___         ___         ___         ___     ");  
+script.Print("     /__/\       /  /\       /__/|       /  /\    ");
+script.Print("    |  |::\     /  /::\     |  |:|      /  /::\   ");
+script.Print("    |  |:|:\   /  /:/\:\    |  |:|     /  /:/\:\  ");
+script.Print("  __|__|:|\:\ /  /:/  \:\ __|  |:|    /  /:/~/:/  ");
+script.Print(" /__/::::| \:/__/:/ \__\:/__/\_|:|___/__/:/ /:/   ");
+script.Print(" \  \:\~~\__\\  \:\ /  /:\  \:\/:::::\  \:\/:/    ");
+script.Print("  \  \:\      \  \:\  /:/ \  \::/~~~~ \  \::/     ");
+script.Print("   \  \:\      \  \:\/:/   \  \:\      \  \:\     "); 
+script.Print("    \  \:\      \  \::/     \  \:\      \  \:\    ");
+script.Print("     \__\/       \__\/       \__\/       \__\/    "); 
+script.Print("   The Power And Customization Your MTK Needs In  ");
+script.Print("                     ONE ROM !                    ");
+script.Print("");
 
   script.ShowProgress(0.2, 10)
   device_specific.FullOTA_InstallEnd()
